@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Лилия Зюбина](https://up.htmlacademy.ru/htmlcss/27/user/585417).
-* Наставник: `Максим Непорада`.
+* Наставник: `Максим Непорада`(https://htmlacademy.ru/profile/maxim_neporada).
 
 ---
 
