@@ -5,23 +5,23 @@
     <title>Нёрдс:Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href='css/normalize.css' rel='stylesheet' >
-    <link href='css/style.css'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
       <header>
-        <nav>
-          <a href='index.html'>
+        <nav class='main-navigation'>
+          <a href='index.html' class='logo-main-navigation'>
             <img src='img/nerds-logo.svg' width='160' height='65' alt='Нёрдс'>
           </a>
-          <ul>
+          <ul class='site-navigation'>
             <li><a href=''>Студия</a></li>
             <li><a href=''>Клиенты</a></li>
-            <li><a href=''>Магазин</a></li>
+            <li class='active'><a href=''>Магазин</a></li>
             <li><a href=''>Контакты</a></li>
           </ul>
-          <ul>
+          <ul class='basket-navigation'>
             <li>
-              <a href=''>Корзина</a>
+              <a class='basket-link' href=''>Корзина</a>
             </li>
           </ul>
         </nav>
@@ -108,7 +108,7 @@
                     <img src='img/img-sedona.jpg' width='360' height='576' alt='Шаблон Sedona'>
                     <a href=''>Sedona</a>
                     <p>Информационный сайт для туристов</p>
-                    <button type='button'>9 900 РУБ.</button>
+                    <button class='button' type='button'>9 900 РУБ.</button>
                   </article>
                 </li>
                 <li>
@@ -116,7 +116,7 @@
                     <img src='img/img-pink-jpg.jpg' width='360' height='576' alt='Шаблон Pink'>
                     <a href=''>Pink</a>
                     <p>Продуктовый лендинг приложения для iOS и Android</p>
-                    <button type='button'>9 900 РУБ.</button>
+                    <button class='button' type='button'>9 900 РУБ.</button>
                   </article>
                 </li>
                 <li>
@@ -124,7 +124,7 @@
                     <img src='img/img-barbershop-jpg.jpg' width='360' height='576' alt='Шаблон Barbershop Borodinski'>
                     <a href=''>Barbershop Borodinski</a>
                     <p>Сайт салона красоты.Для мужчин, да.</p>
-                    <button type='button'>9 900 РУБ.</button>
+                    <button class='button' type='button'>9 900 РУБ.</button>
                   </article>
                 </li>
                 <li>
@@ -132,7 +132,7 @@
                     <img src='img/img-mishka-jpg.jpg' width='360' height='576' alt='Шаблон Mishka'>
                     <a href=''>Mishka</a>
                     <p>Интернет-магазин вязаных игрушек</p>
-                    <button type='button'>9 900 РУБ.</button>
+                    <button class='button' type='button'>9 900 РУБ.</button>
                   </article>
                 </li>
                 <li>
@@ -140,7 +140,7 @@
                     <img src='img/img-aplus-jpg.jpg' width='360' height='576' alt='Шаблон A+'>
                     <a href=''>A+</a>
                     <p>Лендинг курсов повышения квалификации</p>
-                    <button type='button'>9 900 РУБ.</button>
+                    <button class='button' type='button'>9 900 РУБ.</button>
                   </article>
                 </li>
                 <li>
@@ -148,7 +148,7 @@
                     <img src='img/img-kvast-jpg.jpg' width='360' height='576' alt='Шаблон Кваст'>
                     <a href=''>Кваст</a>
                     <p>Промо-сайт производителя крафтового кваса</p>
-                    <button type='button'>9 900 РУБ.</button>
+                    <button class='button' type='button'>9 900 РУБ.</button>
                   </article>
                 </li>
               </ul>
@@ -170,18 +170,18 @@
               </ul>
             </div>
         </main>
-        <footer>
-          <div>
+        <footer class='main-footer'>
+          <div class='contacts'>
             <img src='img/map.png' width='1440' height='416' alt='Офис находится по адресу:Санкт-Петербург, 
             ул. Б. Конюшенная, д. 19/8'>
-            <p>
-             NЁRDS DESIGN STUDIO<br>
-             191186, Санкт-Петербург,<br>
+            <span>
+             NЁRDS DESIGN STUDIO</span><br>
+             <p class='contact-adress'>191186, Санкт-Петербург,<br>
              Б. Конюшенная, д. 19/8 <br>
             
              Телефон: +7 (812) 275-75-75
             </p>
-            <button type='button'>Напишите нам</button>
+            <button class='button' type='button'>Напишите нам</button>
             <div>
               <form action='https://echo.htmlacademy.ru' method='post'>
                  <p>
@@ -196,21 +196,21 @@
                   <label for='letters-text'>Текст письма</label>
                   <textarea name='letter' id='letters-text' rows='5' cols='100' placeholder='В свободной форме'></textarea>
                  </p>
-                 <button type='submit'>Отправить</button>
+                 <button class='button' type='submit'>Отправить</button>
                </form>
                <button type='button'> Закрыть</button> 
              </div>
           </div>
-            <div>
-              <ul>
-              <li><a href=''>Вконтакте</a></li>
-              <li><a href=''>Фейсбук</a></li>
-              <li><a href=''>Инстаграм</a></li>
-              </ul>
-            </div>
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-          </footer>
+          <div class='footer-social'>
+            <ul>
+            <li><a class='social-button' href=''>Вконтакте</a></li>
+            <li><a class='social-button' href=''>Фейсбук</a></li>
+            <li><a class='social-button' href=''>Инстаграм</a></li>
+            </ul>
+            <p class='friendship'>Давайте дружить, это выгодно!</p>
+            <p class='friendship-discount'>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </footer>
       </body>
     </html>
     
