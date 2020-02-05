@@ -27,10 +27,10 @@
         </nav>
         </header>
         <main>
-            <h1>Магазин готовых шаблонов</h1>
-            <section>
+            <h1 class='page-title'>Магазин готовых шаблонов</h1>
+            <section class='pattern-filter'>
                 <h2 class='visually-hidden'>Фильтр услуг</h2>
-                <h3>Сортировать:</h3>
+                <h3 class='sorting'>Сортировать:</h3>
                   <ul>
                     <li>
                       <a href=''> По цене</a>
@@ -49,55 +49,55 @@
 
                  <form method='get' action='https://echo.htmlacademy.ru'>
                   <fieldset>
-                   <legend>Стоимость:</legend>
+                   <legend class='filters-name'>Стоимость:</legend>
                    <label for='min-price'>От</label>
                    <input type='number' name='min-price' id='min-price'  min='0' max='7500' step='500' placeholder='0'>
                    <label for='max-price'>До</label>
                    <input type='number' name='max-price' id='max-price' min='7500' max='15000' step='500' placeholder='15000'>
                   </fieldset>
                   <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul>
-                      <li>
+                    <legend class='filters-name'>Сетка:</legend>
+                    <ul class='filter-grid'>
+                      <li class='filter-item'>
                        <input type='radio' name='grid' value='adaptive' id='adaptive-grid' checked>
                        <label for='adaptive-grid'>Адаптивная</label>
                       </li>
-                      <li>
+                      <li class='filter-item'>
                         <input type='radio' name='grid' value='fixed' id='fixed-grid'>
                         <label for='fixed-grid'>Фиксированная</label>
                       </li>
-                      <li>
+                      <li class='filter-item'>
                         <input type='radio' name='grid' value='rubber' id='rubber-grid'>
                         <label for='rubber-grid'>Резиновая</label>
                       </li>
                     </ul>
                   </fieldset>
                   <fieldset>
-                    <legend>Особенности</legend>
-                    <ul>
-                      <li>
+                    <legend class='filters-name'>Особенности</legend>
+                    <ul class='filter-feature'>
+                      <li class='filter-item'>
                         <input type='checkbox' name='slider' id='feature-slider' checked>
                         <label for='feature-slider'>Слайдер</label>
                       </li>
-                      <li>
+                      <li class='filter-item'>
                         <input type='checkbox' name='benefits-block' id='feature-benefits-block'>
                         <label for='feature-benefits-block'>Блок преимуществ</label>
                       </li>
-                      <li>
+                      <li class='filter-item'>
                         <input type='checkbox' name='news' id='feature-news' checked>
                         <label for='feature-news'>Новости</label>
                       </li>
-                      <li>
+                      <li class='filter-item'>
                         <input type='checkbox' name='gallery' id='feature-gallery'>
                         <label for='feature-gallery'>Галерея</label>
                       </li>
-                      <li>
+                      <li class='filter-item'>
                         <input type='checkbox' name='basket' id='feature-basket'>
                         <label for='feature-basket'>Корзина</label>
                       </li>
                     </ul>
                   </fieldset>
-                <button type="submit">Показать</button>
+                <button class='button filter-button' type="submit">Показать</button>
                 </form>
             </section>
             <section>

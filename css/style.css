@@ -150,3 +150,48 @@ a {
    line-height: 22px;
    text-align: center;
 }
+
+.page-title{
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align:center;
+
+    background-color: #eeeeee;
+}
+
+.filter-grid,
+.filter-feature{
+    list-style: none;
+}
+
+.filters-name{
+    font-size:18px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+}
+
+.filter-item{
+    color:#283136;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.filter-button{
+    color:#000000;
+
+    background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+    background-color: #dfdfdf;
+}
+
+.filter-button:active{
+    color:rgba(0, 0, 0, 0.3);
+
+    background-color: #d5d5d5;
+}
