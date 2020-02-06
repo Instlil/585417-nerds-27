@@ -11,9 +11,11 @@ body {
 
     background-color: #ffffff;
 }
+
 a {
     text-decoration: none;
   }
+
 .main-navigation{
     font-size: inherit;
     line-height: 30px;
@@ -45,8 +47,40 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.active a{
+.site-navigation .active{
     border-bottom: 2px solid #fb565a;
+}
+
+.slogan-statement{
+    font-size:55px;
+    font-weight:500;
+    line-height:55px;
+    text-align:left;
+}
+
+.explanation{
+    color:#283136;
+    text-align: left;
+}
+
+.slogans .button{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+    background-color: #fb565a;
+}
+
+.slogans .button:hover,
+.slogans .button:focus{
+    background-color: #e74246;
+}
+
+.slogans .button:active{
+    color:rgba(255, 255, 255, 0.3);
+
+    background-color: #d7373b;
 }
 
 .services-list{
@@ -118,6 +152,78 @@ a {
     background-color: #e5a722;
 }
 
+.advantages-title{
+    font-size:55px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align:left;
+}
+
+.advantage-orders{
+    font-weight: bold;
+    text-align:left;
+}
+
+.order-list ul {
+    list-style: none;
+
+    color:#283136;
+    text-align: left;
+}
+
+.advantage-percents p{
+    text-align: center;
+}
+
+.percents-list dd{
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 10px;
+    text-align:left;
+}
+
+.percents-list dt{
+    color:#283136;
+    font-size: 16px;
+    line-height: 18px;
+    text-align:left;
+}
+
+.contacts span{
+    font-size:18px;
+    font-weight:bold;
+    line-height: 30px;
+    text-align:left;
+}
+
+.contact-adress{
+    color:#666666;
+    font-size: 16px;
+    line-height: 18px;
+    text-align:left;
+}
+
+.contacts .button{
+
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+    background-color: #fb565a;
+}
+
+.contacts .button:hover,
+.contacts .button:focus{
+    background-color: #e74246;
+}
+
+.contacts .button:active{
+    color:rgba(255, 255, 255, 0.3);
+
+    background-color: #d7373b;
+}
+
 .footer-social ul{
     list-style: none;
 }
@@ -160,8 +266,34 @@ a {
     background-color: #eeeeee;
 }
 
+h3.sorting{
+    font-size:18px;
+    font-weight:bold;
+    line-height: 18px;
+    text-align:left;
+}
+
+.sorting-item a{
+    color: rgba(0, 0, 0, 0.3);
+    font-size:14px;
+    line-height: 18px;
+    text-align:left;
+}
+
+.sorting-item:active a,
+.sorting-item.active a{
+    color:#000000;
+}
+
+.sorting-item:hover a,
+.sorting-item:focus a{
+    color:rgba(0, 0, 0, 0.6);
+}
+
 .filter-grid,
-.filter-feature{
+.filter-feature,
+.sorting-list,
+.sorting-button{
     list-style: none;
 }
 
@@ -194,4 +326,36 @@ a {
     color:rgba(0, 0, 0, 0.3);
 
     background-color: #d5d5d5;
+}
+
+.pages ul {
+    list-style: none;
+}
+
+.page-item a{
+    color:#000000;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 15.5px;
+    text-align:center;
+
+    background-color: #eeeeee;
+}
+
+.page-item:focus a,
+.page-item:hover a{
+    background-color: #dfdfdf;
+}
+
+.page-item:active a{
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: #d5d5d5;
+}
+
+.page-item.active a{
+    color:#000000;
+
+    background-color: #ffffff;
+    border: solid 3px #dbdbdb;
 }
