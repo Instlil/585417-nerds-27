@@ -5,9 +5,8 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: regular;
     color: #000000;
-    text-transform: none;
 
     background-color: #ffffff;
 }
@@ -19,8 +18,8 @@ a {
 .main-navigation{
     font-size: inherit;
     line-height: 30px;
-    color:#000000;
     text-transform: uppercase;
+    color:#000000;
 
     background-color: #eeeeee;
 }
@@ -53,21 +52,23 @@ a {
 
 .slogan-statement{
     font-size:55px;
-    font-weight:500;
+    font-weight:normal;
     line-height:55px;
     text-align:left;
 }
 
-.explanation{
-    color:#283136;
+.slogan-explanation,
+.advantage-explanation,
+.service-explanation{
     text-align: left;
+    color:#283136;
 }
 
 .slogans .button{
-    color: #ffffff;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
+    color: #ffffff;
 
     background-color: #fb565a;
 }
@@ -81,6 +82,24 @@ a {
     color:rgba(255, 255, 255, 0.3);
 
     background-color: #d7373b;
+}
+
+.slogans .slogan-img:first-child{
+    background-image: url(img/slide-1-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slogans .slogan-img:nth-child(2){
+    background-image: url(img/slide-2-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slogans .slogan-img:last-child{
+    background-image: url(img/slide-3-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .services-list{
@@ -98,55 +117,70 @@ a {
     text-transform: uppercase;
 }
 
+.service-item:nth-child(1) .service-img{
+    background-image: url(img/advantage-picture-red.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-item:nth-child(2) .service-img{
+    background-image: url(img/advantage-picture-green.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-item:nth-child(3) .service-img{
+    background-image: url(img/advantage-picture-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .button{
     font-size: 16px;
     line-height: 18px;
-    color:#ffffff;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
-}
-
-.red {
     background-color:#fb565a;
+    color:#ffffff;
 }
 
-.red:hover,
-.red:focus {
+.button:hover,
+.button:focus {
     background-color: #e74246;
 }
 
-.red:active{
+.button:active{
     color:rgba(255, 255, 255, 0.3);
 
     background-color: #d7373b;
 }
 
-.green{
+.button-green{
     background-color:#00ca74;
 }
 
-.green:hover,
-.green:focus{
+.button-green:hover,
+.button-green:focus{
     background-color: #00bc6c;
 }
 
-.green:active{
+.button-green:active{
     color:rgba(255, 255, 255, 0.3);
 
     background-color: #00aa62;
 }
 
-.yellow{
+.button-yellow{
     background-color:#efc84a;
 }
 
-.yellow:hover,
-.yellow:focus{
+.button-yellow:hover,
+.button-yellow:focus{
     background-color: #eab534;
 }
 
-.yellow:active{
+.button-yellow:active{
     color:rgba(255, 255, 255, 0.3);
 
     background-color: #e5a722;
@@ -154,7 +188,7 @@ a {
 
 .advantages-title{
     font-size:55px;
-    font-weight: 500;
+    font-weight: normal;
     line-height: 55px;
     text-align:left;
 }
@@ -167,8 +201,8 @@ a {
 .order-list ul {
     list-style: none;
 
-    color:#283136;
     text-align: left;
+    color:#283136;
 }
 
 .advantage-percents p{
@@ -183,10 +217,10 @@ a {
 }
 
 .percents-list dt{
-    color:#283136;
     font-size: 16px;
     line-height: 18px;
     text-align:left;
+    color:#283136;
 }
 
 .contacts span{
@@ -196,19 +230,18 @@ a {
     text-align:left;
 }
 
-.contact-adress{
-    color:#666666;
+.contact-address{
     font-size: 16px;
     line-height: 18px;
     text-align:left;
+    color:#666666;
 }
 
 .contacts .button{
-
-    color: #ffffff;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
+    color: #ffffff;
 
     background-color: #fb565a;
 }
@@ -222,6 +255,47 @@ a {
     color:rgba(255, 255, 255, 0.3);
 
     background-color: #d7373b;
+}
+
+.feedback input,
+.feedback textarea{
+    outline: none;
+}
+
+.feedback label{
+    font-size: 16px;
+    font-weight:bold;
+    line-height: 18px;
+    text-align: left;
+}
+
+.feedback input,
+.feedback textarea{
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    color:rgba(68, 68, 68, 0.5);
+
+    border:solid 2px #d7dcde;
+}
+
+.feedback input:hover,
+.feedback textarea:hover{
+    border:solid 2px #b4b9bb;
+}
+
+.feedback input:focus,
+.feedback textarea:focus{
+    color:#444444;
+
+    border:solid 2px #000000;
+}
+
+.feedback input:invalid,
+.feedback textarea:invalid{
+    color:#e74246;
+
+    border:solid 2px #e74246;
 }
 
 .footer-social ul{
@@ -251,15 +325,15 @@ a {
 }
 
 .footer-social .friendship-discount{
-   color:#444444;
    font-size: 16px;
    line-height: 22px;
    text-align: center;
+   color:#444444;
 }
 
 .page-title{
     font-size: 55px;
-    font-weight: 500;
+    font-weight: normal;
     line-height: 55px;
     text-align:center;
 
@@ -271,22 +345,24 @@ h3.sorting{
     font-weight:bold;
     line-height: 18px;
     text-align:left;
+    text-transform:uppercase;
 }
 
 .sorting-item a{
-    color: rgba(0, 0, 0, 0.3);
     font-size:14px;
     line-height: 18px;
     text-align:left;
+    text-transform:uppercase;
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting-item:active a,
+.sorting-item a:active,
 .sorting-item.active a{
     color:#000000;
 }
 
-.sorting-item:hover a,
-.sorting-item:focus a{
+.sorting-item a:hover,
+.sorting-item a:focus{
     color:rgba(0, 0, 0, 0.6);
 }
 
@@ -302,13 +378,14 @@ h3.sorting{
     font-weight: bold;
     line-height: 30px;
     text-align: left;
+    text-transform: uppercase;
 }
 
 .filter-item{
-    color:#283136;
     font-size: 16px;
     line-height: 20px;
     text-align: left;
+    color:#283136;
 }
 
 .filter-button{
@@ -328,26 +405,49 @@ h3.sorting{
     background-color: #d5d5d5;
 }
 
+.catalog-list{
+    list-style: none;
+}
+
+.catalog-item-card{
+    background-color:#eeeeee;
+}
+
+.catalog-item a{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color:#000000;
+}
+
+.catalog-item p{
+    font-size:16px;
+    line-height: 18px;
+    text-align: center;
+    color:#666666;
+}
+
 .pages ul {
     list-style: none;
 }
 
 .page-item a{
-    color:#000000;
     font-size: 13.5px;
-    font-weight: 500;
+    font-weight: normal;
     line-height: 15.5px;
     text-align:center;
+    color:#000000;
 
     background-color: #eeeeee;
 }
 
-.page-item:focus a,
-.page-item:hover a{
+.page-item a:focus,
+.page-item a:hover{
     background-color: #dfdfdf;
 }
 
-.page-item:active a{
+.page-item a:active{
     color: rgba(0, 0, 0, 0.3);
 
     background-color: #d5d5d5;
