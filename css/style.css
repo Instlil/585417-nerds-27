@@ -84,20 +84,26 @@ a {
     background-color: #d7373b;
 }
 
-.slogans .slogan-img:first-child{
-    background-image: url(img/slide-1-img.png);
+.slogan-slider-1 .slogan-img{
+    width:698px;
+    height: 413px;
+    background-image: url(../img/slide1-img.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.slogans .slogan-img:nth-child(2){
-    background-image: url(img/slide-2-img.png);
+.slogan-slider-2 .slogan-img{
+    width:663px;
+    height:430px;
+    background-image: url(../img/slide2-img.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.slogans .slogan-img:last-child{
-    background-image: url(img/slide-3-img.png);
+.slogan-slider-3 .slogan-img{
+    width:759px;
+    height: 411px;
+    background-image: url(../img/slide3-img.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -117,20 +123,28 @@ a {
     text-transform: uppercase;
 }
 
+.service-item .service-img {
+    width: 300px;
+    height: 146px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
 .service-item:nth-child(1) .service-img{
-    background-image: url(img/advantage-picture-red.png);
+    background-image: url(../img/advantage-picture-red.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .service-item:nth-child(2) .service-img{
-    background-image: url(img/advantage-picture-green.png);
+    background-image: url(../img/advantage-picture-green.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .service-item:nth-child(3) .service-img{
-    background-image: url(img/advantage-picture-yellow.png);
+    background-image: url(../img/advantage-picture-yellow.png);
     background-repeat: no-repeat;
     background-position: center;
 }
