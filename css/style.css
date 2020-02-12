@@ -16,12 +16,35 @@ a {
   }
 
 .main-navigation{
+ /*  display:flex;
+    justify-content: space-between;
+    min-height: 132px;
+    align-items: flex-end; */
+
     font-size: inherit;
     line-height: 30px;
     text-transform: uppercase;
     color:#000000;
 
-    background-color: #eeeeee;
+    /*  background-color: #d7373b; */
+}
+
+.site-navigation{
+    /* display:flex;
+    justify-content:space-around;
+
+    flex-grow: 1;
+
+    background-color: blueviolet; */
+}
+
+.basket-navigation{
+   /* margin-right: 140px;
+    background-color: chartreuse; */
+}
+
+.logo-main-navigation{
+   /* margin-left: 140px;*/
 }
 
 .site-navigation,
