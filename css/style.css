@@ -55,8 +55,8 @@ a {
 .basket-navigation{
     list-style:none;
     padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .site-navigation{
@@ -100,7 +100,7 @@ a {
 .slogan-slider-2,
 .slogan-slider-3{
     display:flex;
-    justify-content: space;
+    justify-content: space-between;
 }
 
 .slogan-statement{
@@ -421,7 +421,6 @@ a {
 }
 
 .footer-social{
-    background-color: #fb565a;
     padding-top: 69px;
     padding-bottom: 69px;
 }
@@ -462,9 +461,6 @@ a {
     background-color: #d7373b;
 }
 
-.friendship-wrapper{
-    background-color: aqua;
-}
 
 .footer-social .friendship{
     font-size:36px;
@@ -491,8 +487,42 @@ a {
     line-height: 55px;
     text-align:center;
 
+    margin:0;
+    padding:0;
+    padding-top: 100px;
+    padding-bottom: 116px;;
+
     background-color: #eeeeee;
 }
+
+.pattern-filter fieldset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.catalog-page .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.pattern-filter{
+    width: 260px;
+}
+
+.catalog{
+    width: 760px;
+    margin-left: 140px;
+}
+
+.sorting-wrapper{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
 
 h3.sorting{
     font-size:18px;
@@ -500,6 +530,21 @@ h3.sorting{
     line-height: 18px;
     text-align:left;
     text-transform:uppercase;
+
+    margin-right: 267px;
+}
+
+.sorting-list,
+.sorting-button{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorting-item{
+    padding-right: 13px;
+    padding-left: 13px;
 }
 
 .sorting-item a{
@@ -525,7 +570,11 @@ h3.sorting{
 .sorting-list,
 .sorting-button{
     list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+     margin-bottom: 0;
 }
+
 
 .filters-name{
     font-size:18px;
@@ -560,10 +609,25 @@ h3.sorting{
 }
 
 .catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
     list-style: none;
 }
 
+.catalog-item{
+    margin-bottom: 33px;
+    margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n){
+    margin-right: 0;
+}
+
 .catalog-item-card{
+    width: 360px;
     background-color:#eeeeee;
 }
 
@@ -582,8 +646,24 @@ h3.sorting{
     color:#666666;
 }
 
-.pages ul {
+
+
+.pages-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
     list-style: none;
+}
+
+.page-item{
+    padding-right:5px;
+    padding-left: 5px;
+}
+
+.page-item:first-child{
+    padding-left:0;
 }
 
 .page-item a{

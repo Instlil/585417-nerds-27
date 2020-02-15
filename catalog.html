@@ -8,7 +8,8 @@
     <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
-      <header>
+      <header class='header'>
+        <div class='container'>
         <nav class='main-navigation'>
           <a href='index.html' class='logo-main-navigation'>
             <img src='img/nerds-logo.svg' width='160' height='65' alt='Нёрдс'>
@@ -25,10 +26,67 @@
             </li>
           </ul>
         </nav>
+      </div>
         </header>
-        <main>
+        <main class='catalog-page'>
             <h1 class='page-title'>Магазин готовых шаблонов</h1>
+            <div class='container'>
             <section class='pattern-filter'>
+              <form method='get' action='https://echo.htmlacademy.ru'>
+                <fieldset>
+                 <legend class='filters-name'>Стоимость:</legend>
+                 <label for='min-price'>От</label>
+                 <input type='number' name='min-price' id='min-price'  min='0' max='7500' step='500' placeholder='0'>
+                 <label for='max-price'>До</label>
+                 <input type='number' name='max-price' id='max-price' min='7500' max='15000' step='500' placeholder='15000'>
+                </fieldset>
+                <fieldset>
+                  <legend class='filters-name'>Сетка:</legend>
+                  <ul class='filter-grid'>
+                    <li class='filter-item'>
+                     <input type='radio' name='grid' value='adaptive' id='adaptive-grid' checked>
+                     <label for='adaptive-grid'>Адаптивная</label>
+                    </li>
+                    <li class='filter-item'>
+                      <input type='radio' name='grid' value='fixed' id='fixed-grid'>
+                      <label for='fixed-grid'>Фиксированная</label>
+                    </li>
+                    <li class='filter-item'>
+                      <input type='radio' name='grid' value='rubber' id='rubber-grid'>
+                      <label for='rubber-grid'>Резиновая</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend class='filters-name'>Особенности</legend>
+                  <ul class='filter-feature'>
+                    <li class='filter-item'>
+                      <input type='checkbox' name='slider' id='feature-slider' checked>
+                      <label for='feature-slider'>Слайдер</label>
+                    </li>
+                    <li class='filter-item'>
+                      <input type='checkbox' name='benefits-block' id='feature-benefits-block'>
+                      <label for='feature-benefits-block'>Блок преимуществ</label>
+                    </li>
+                    <li class='filter-item'>
+                      <input type='checkbox' name='news' id='feature-news' checked>
+                      <label for='feature-news'>Новости</label>
+                    </li>
+                    <li class='filter-item'>
+                      <input type='checkbox' name='gallery' id='feature-gallery'>
+                      <label for='feature-gallery'>Галерея</label>
+                    </li>
+                    <li class='filter-item'>
+                      <input type='checkbox' name='basket' id='feature-basket'>
+                      <label for='feature-basket'>Корзина</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              <button class='button filter-button' type="submit">Показать</button>
+              </form>
+            </section>
+              <section class='catalog'>
+              <div class='sorting-wrapper'>
                 <h2 class='visually-hidden'>Фильтр услуг</h2>
                 <h3 class='sorting'>Сортировать:</h3>
                   <ul class='sorting-list'>
@@ -46,62 +104,8 @@
                     <li><button class='active' type='button'>&#9650;</button> </li>
                     <li><button type='button'>&#9660;</button> </li>
                   </ul>
-
-                 <form method='get' action='https://echo.htmlacademy.ru'>
-                  <fieldset>
-                   <legend class='filters-name'>Стоимость:</legend>
-                   <label for='min-price'>От</label>
-                   <input type='number' name='min-price' id='min-price'  min='0' max='7500' step='500' placeholder='0'>
-                   <label for='max-price'>До</label>
-                   <input type='number' name='max-price' id='max-price' min='7500' max='15000' step='500' placeholder='15000'>
-                  </fieldset>
-                  <fieldset>
-                    <legend class='filters-name'>Сетка:</legend>
-                    <ul class='filter-grid'>
-                      <li class='filter-item'>
-                       <input type='radio' name='grid' value='adaptive' id='adaptive-grid' checked>
-                       <label for='adaptive-grid'>Адаптивная</label>
-                      </li>
-                      <li class='filter-item'>
-                        <input type='radio' name='grid' value='fixed' id='fixed-grid'>
-                        <label for='fixed-grid'>Фиксированная</label>
-                      </li>
-                      <li class='filter-item'>
-                        <input type='radio' name='grid' value='rubber' id='rubber-grid'>
-                        <label for='rubber-grid'>Резиновая</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <fieldset>
-                    <legend class='filters-name'>Особенности</legend>
-                    <ul class='filter-feature'>
-                      <li class='filter-item'>
-                        <input type='checkbox' name='slider' id='feature-slider' checked>
-                        <label for='feature-slider'>Слайдер</label>
-                      </li>
-                      <li class='filter-item'>
-                        <input type='checkbox' name='benefits-block' id='feature-benefits-block'>
-                        <label for='feature-benefits-block'>Блок преимуществ</label>
-                      </li>
-                      <li class='filter-item'>
-                        <input type='checkbox' name='news' id='feature-news' checked>
-                        <label for='feature-news'>Новости</label>
-                      </li>
-                      <li class='filter-item'>
-                        <input type='checkbox' name='gallery' id='feature-gallery'>
-                        <label for='feature-gallery'>Галерея</label>
-                      </li>
-                      <li class='filter-item'>
-                        <input type='checkbox' name='basket' id='feature-basket'>
-                        <label for='feature-basket'>Корзина</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                <button class='button filter-button' type="submit">Показать</button>
-                </form>
-            </section>
-            <section>
-              <h2>Каталог</h2>
+                </div>
+              <h2 class='visually-hidden'>Каталог</h2>
               <ul class='catalog-list'>
                 <li class='catalog-item'>
                   <article>
@@ -164,7 +168,6 @@
                   </article>
                 </li>
               </ul>
-            </section>
             <div class='pages'>
               <ul class='pages-list'>
                 <li class='page-item active'>
@@ -181,46 +184,53 @@
                 </li>
               </ul>
             </div>
+          </section>
+            </div>
         </main>
         <footer class='main-footer'>
           <div class='contacts'>
             <img src='img/map.png' width='1440' height='416' alt='Офис находится по адресу:Санкт-Петербург, 
             ул. Б. Конюшенная, д. 19/8'>
-            <span>
-             NЁRDS DESIGN STUDIO</span><br>
-             <p class='contact-adress'>191186, Санкт-Петербург,<br>
+            <div class='container'>
+            <span>NЁRDS DESIGN STUDIO</span><br>
+             <p class='contact-address'>191186, Санкт-Петербург,<br>
              Б. Конюшенная, д. 19/8 <br>
             
              Телефон: +7 (812) 275-75-75
             </p>
             <button class='button' type='button'>Напишите нам</button>
-            <div class='feedback'>
-              <form action='https://echo.htmlacademy.ru' method='post'>
-                 <p>
-                   <label for='name'>Ваше имя</label>
-                   <input type='text' name='login' id='name' placeholder='Имя Фамилия'>
-                 </p>
-                 <p>
-                   <label for='mail'>Ваш e-mail</label>
-                   <input type='email' name='email' id='mail' placeholder='email@example.com'>
-                 </p>
-                 <p>
-                  <label for='letters-text'>Текст письма</label>
-                  <textarea name='letter' id='letters-text' rows='5' cols='100' placeholder='В свободной форме'></textarea>
-                 </p>
-                 <button class='button' type='submit'>Отправить</button>
-               </form>
-               <button type='button'> Закрыть</button> 
-             </div>
+          </div>
+              <div class='feedback'>
+               <form action='https://echo.htmlacademy.ru' method='post'>
+                  <p>
+                    <label for='name'>Ваше имя</label>
+                    <input type='text' name='login' id='name' placeholder='Имя Фамилия'>
+                  </p>
+                  <p>
+                    <label for='mail'>Ваш e-mail</label>
+                    <input type='email' name='email' id='mail' placeholder='email@example.com'>
+                  </p>
+                  <p>
+                    <label for='letters-text'>Текст письма</label>
+                    <textarea name='letter' id='letters-text' rows='5' cols='100' placeholder='В свободной форме'></textarea>
+                  </p>
+                  <button class='button' type='submit'>Отправить</button>
+                </form>
+                <button type='button'> Закрыть</button>
+              </div>
           </div>
           <div class='footer-social'>
+            <div class='container'>
             <ul class='social-list'>
-            <li><a class='social-button' href=''>Вконтакте</a></li>
-            <li><a class='social-button' href=''>Фейсбук</a></li>
-            <li><a class='social-button' href=''>Инстаграм</a></li>
+              <li><a class='social-button' href=''>Вконтакте</a></li>
+              <li><a class='social-button' href=''>Фейсбук</a></li>
+              <li><a class='social-button' href=''>Инстаграм</a></li>
             </ul>
-            <p class='friendship'>Давайте дружить, это выгодно!</p>
-            <p class='friendship-discount'>Скидка 10% для друзей из социальных сетей.</p>
+            <div class='friendship-wrapper'>
+              <p class='friendship'>Давайте дружить, это выгодно!</p>
+              <p class='friendship-discount'>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+          </div>
           </div>
         </footer>
       </body>
