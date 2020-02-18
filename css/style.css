@@ -59,19 +59,42 @@ a {
     margin-bottom: 0;
 }
 
-.site-navigation{
+.site-navigation,
+.basket-navigation{
     display: flex;
     flex-wrap: wrap;
 }
 
-.site-navigation li {
-    margin-left: 23px;
-    margin-right: 23px;
-  }
-
 .site-navigation a,
-.basket-navigation a{
+.basket-navigation a {
+    display:block;
+
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top:12px;
+    padding-bottom:12px;
+
     color:#000000;
+}
+
+.basket-navigation .basket-link{
+    position: relative;
+    padding-left: 50px;
+}
+
+.basket-link::before{
+    content: "";
+    position: absolute;
+    top:18px;
+    right:115px;
+    width: 15px;
+    height: 15px;
+
+    background-image: url(../img/basket-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
 }
 
 .site-navigation a:hover,
@@ -88,6 +111,7 @@ a {
 
 .site-navigation .active{
     border-bottom: 2px solid #fb565a;
+
 }
 
 .slogans{
@@ -95,6 +119,7 @@ a {
 
     background-color:#eeeeee;
 }
+
 
 .slogan-slider-1,
 .slogan-slider-2,
@@ -108,6 +133,12 @@ a {
     font-weight:normal;
     line-height:55px;
     text-align:left;
+
+    margin-bottom: 28px;
+}
+
+.slogan-explanation{
+    margin-bottom:42px;
 }
 
 .slogan-explanation,
@@ -124,6 +155,9 @@ a {
     color: #ffffff;
 
     background-color: #fb565a;
+
+    padding-right: 55px;
+    padding-left: 53px;
 }
 
 .slogans .button:hover,
@@ -188,6 +222,13 @@ a {
     font-weight: bold;
     line-height: 30px;
     text-transform: uppercase;
+
+    margin-top: 30px;
+    margin-bottom: 27px;
+}
+
+.service-item .service-explanation{
+    margin-bottom:35px;
 }
 
 .service-item .service-img {
@@ -224,6 +265,10 @@ a {
     text-transform: uppercase;
     background-color:#fb565a;
     color:#ffffff;
+    border:none;
+    border-radius: 2px;
+    padding-top: 19px;
+    padding-bottom:19px;
 }
 
 .button:hover,
@@ -265,6 +310,11 @@ a {
     color:rgba(255, 255, 255, 0.3);
 
     background-color: #e5a722;
+}
+
+.service-item .button{
+    padding-left: 39px;
+    padding-right: 39px;
 }
 
 .advantages .container{
@@ -379,6 +429,77 @@ a {
     background-color: #d7373b;
 }
 
+.feedback{
+    position:relative;
+
+    box-sizing:border-box;
+    max-width:960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 73px;
+    padding-bottom: 84px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.feedback span{
+    display: block;
+
+    font-size: 45px;
+    line-height: 45px;
+    text-align: left;
+
+    margin-bottom: 49px;
+}
+
+.feedback form{
+    width: 760px;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback-item{
+    width:360px;
+    margin:0;
+}
+
+.feedback-item label{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.feedback-item input{
+  box-sizing:border-box;
+  width: 360px;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+}
+
+.feedback-item:nth-child(3){
+    width:760px;
+
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 47px;
+}
+
+.feedback-item:nth-child(3) textarea{
+    box-sizing:border-box;
+    width: 760px;
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-right: 16px;
+  }
+
+.feedback .button{
+    padding-right: 83px;
+    padding-left: 83px;
+}
+
 .feedback input,
 .feedback textarea{
     outline: none;
@@ -420,6 +541,27 @@ a {
     border:solid 2px #e74246;
 }
 
+.feedback .close-button{
+    position: absolute;
+    top:78px;
+    right:90px;
+    text-indent:-10000px;
+    width: 21px;
+    height: 21px;
+    border:none;
+
+    background-image: url(../img/close-cross.svg);
+    opacity: 0.3;
+}
+
+.feedback .close-button:hover{
+    opacity: 1;
+}
+
+.feedback .close-button:active{
+    opacity:0.1;
+}
+
 .footer-social{
     padding-top: 69px;
     padding-bottom: 69px;
@@ -428,7 +570,6 @@ a {
 
 .footer-social .container{
     display: flex;
-    
 }
 
 .social-list{
@@ -443,14 +584,17 @@ a {
 }
 
 .social-button {
-    color: #ffffff;
-
-    background-color:#e1e1e1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:79px;
+    height:79px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
 
     margin-left:6px;
     margin-right: 6px;
   }
-
 
 .social-button:hover,
 .social-button:focus {
@@ -460,7 +604,9 @@ a {
 .social-button:active{
     background-color: #d7373b;
 }
-
+.social-button:active path{
+    fill:rgba(255, 255, 255, 0.3);
+}
 
 .footer-social .friendship{
     font-size:36px;
