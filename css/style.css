@@ -118,7 +118,6 @@ img {
 
 .site-navigation .active{
     border-bottom: 2px solid #fb565a;
-
 }
 
 .slogans{
@@ -203,6 +202,7 @@ img {
 }
 
 .services{
+    position: relative;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -324,6 +324,22 @@ img {
     padding-right: 39px;
 }
 
+.services::after{
+    content: "";
+    position: absolute;
+    top:507px;
+    left:140px;
+    width: 1160px;
+    height: 2px;
+    background-color: #eeeeee;
+}
+
+.advantages{
+    position: relative;
+    margin-top:40px;
+    margin-bottom: 76px;
+}
+
 .advantages .container{
     display:flex;
     justify-content: space-between;
@@ -331,75 +347,172 @@ img {
 
 .column-1{
     width:650px;
-    padding-top: 80px;
-    padding-bottom: 76px;
 }
 
 .column-2{
+    position: relative;
     width:360px;
-    padding-top: 40px;
-    padding-bottom: 76px;
 }
 
 .advantages-title{
-    font-size:55px;
+    font-size:45px;
     font-weight: normal;
-    line-height: 55px;
+    line-height: 45px;
     text-align:left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.advantage-explanation{
+    display:block;   
+    margin-bottom: 43px; 
 }
 
 .advantage-orders{
     font-weight: bold;
     text-align:left;
+    text-transform: uppercase;
+
+    margin-bottom: 39px;
 }
 
-.order-list ul {
+.order-list{
     list-style: none;
 
     text-align: left;
     color:#283136;
 }
 
+.order-list li{
+    position: relative;
+
+    margin-top: 18px;
+    margin-bottom: 18px; 
+}
+
+.order-list li::before{
+    content: "";
+    position: absolute;
+    left:-36px;
+    top:12px;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+}
+
 .advantage-percents p{
+    text-transform: uppercase;
+
     text-align: center;
+    font-weight: bold;
+    margin-top:41px;
 }
 
 .percents-list{
     display: flex;
     flex-wrap: wrap;
-
-    padding-top: 49px;
-}
-
-.percents-list dd{
-    font-size: 45px;
-    font-weight: bold;
-    line-height: 10px;
-    text-align:left;
-}
-
-.percents-list dt{
-    font-size: 16px;
-    line-height: 18px;
-    text-align:left;
-    color:#283136;
-}
-
-.partners{
-    margin-bottom: 80px;
-}
-
-.partners-list{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    min-height: 180px;
 
     list-style: none;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.percents-list-item{
+    display: block;
+    width: 100px;
+
+    font-size: 16px;
+    line-height: 18px;
+    text-align:left;
+    color:#283136;
+
+    margin-top: 30px;
+}
+
+.percents-list-item b{
+    display: block;
+
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 10px;
+    text-align:left;
+    color: #000000;
+
+    margin-bottom: 27px;
+}
+
+.advantages::after{
+    content: "";
+    position: absolute;
+    left: 140px;
+    bottom:-58px;
+    width: 1160px;
+    height: 2px;
+    background-color: #eeeeee;
+}
+
+.partners{
+    position: relative;
+
+    margin-bottom: 80px;
+}
+
+.partners-list{
+    position:relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    padding-left: 0;
+    padding-top:46px;
+    padding-bottom:44px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.partner-item img{
+    opacity:0.2;
+}
+
+.partner-item img:hover{
+    opacity:1;
+}
+
+.partner-item img:active{
+    opacity:0.1;
+}
+
+.partner-item:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    top:64px;
+    left:279px;
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
+}
+
+.partner-item:nth-child(2)::after{
+   left:579px; 
+}
+
+.partner-item:nth-child(3)::after{
+    left:879px; 
+ }
+
+.partners::after{
+    content: "";
+    position: absolute;
+    left:140px;
+    top:180px;
+    width: 1160px;
+    height: 2px;
+    background-color: #eeeeee;
 }
 
 .contacts span{
@@ -729,7 +842,7 @@ h3.sorting{
     list-style: none;
     padding-left: 0;
     margin-top: 0;
-     margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .filters-name{
