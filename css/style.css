@@ -687,7 +687,6 @@ img {
     padding-bottom: 69px;
 }
 
-
 .footer-social .container{
     display: flex;
 }
@@ -793,7 +792,6 @@ img {
     margin-bottom: 59px;
 }
 
-
 h3.sorting{
     font-size:18px;
     font-weight:bold;
@@ -802,6 +800,88 @@ h3.sorting{
     text-transform:uppercase;
 
     margin-right: 267px;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 49px;
+  }
+
+  .range-controls {
+    position: relative;
+
+    height: 41px;
+    margin-bottom: 15px;
+    padding-top:39px ;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #f1f1f1;
+    
+    border-radius: 5px;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+  
+    background: #00ca74;
+  }
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+  
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow:0 2px 1px 0 #cfcfcf;
+
+    cursor: pointer;
+  }
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+  
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+.range-controls .scale {
+    height: 2px;
+  
+    background: #d7dcde;
+}
+
+.price-controls {
+    font-size: 0;
+}
+  
+.price-controls label {
+    display: inline;
+    width: 50%;
+    
+    font-size: 16px;
+    text-transform: uppercase;
+}
+  
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
 }
 
 .sorting-list,
@@ -874,7 +954,11 @@ fieldset:nth-child(3) .filters-name{
 
     cursor: pointer;
     user-select: none;
-    
+}
+
+.filter-input-radio:disabled + label,
+.filter-input-checkbox:disabled + label{
+    opacity:0.3;
 }
 
 .filter-grid label::before{
@@ -891,6 +975,14 @@ fieldset:nth-child(3) .filters-name{
     border-radius: 50%;
 }
 
+.filter-item:hover label::before{
+    opacity:1;
+}
+
+.filter-item:disabled label::before{
+    opacity:0.1;
+}
+
 .filter-input-radio:checked + label::after{
     content: "";
     position: absolute;
@@ -903,6 +995,14 @@ fieldset:nth-child(3) .filters-name{
     background-color: #4d4d4d;
     opacity: 0.4;
     border-radius: 50%;
+}
+
+.filter-input-radio:checked:hover + label::after{
+    opacity:1;
+}
+
+.filter-input-radio:checked:disabled + label::after{
+    opacity:0.1;
 }
 
 .filter-feature label::before{
@@ -930,6 +1030,14 @@ fieldset:nth-child(3) .filters-name{
 
     background-image: url(../img/checkbox-on.svg);
     opacity: 0.4;
+}
+
+.filter-input-checkbox:checked:hover + label::after{
+    opacity:1;
+}
+
+.filter-input-checkbox:checked:disabled + label::after{
+    opacity:0.1;
 }
 
 .filter-button{

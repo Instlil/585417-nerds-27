@@ -35,10 +35,21 @@
               <form method='get' action='https://echo.htmlacademy.ru'>
                 <fieldset>
                  <legend class='filters-name'>Стоимость:</legend>
+                 <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
                  <label for='min-price'>От</label>
                  <input type='number' name='min-price' id='min-price'  min='0' max='7500' step='500' placeholder='0'>
                  <label for='max-price'>До</label>
                  <input type='number' name='max-price' id='max-price' min='7500' max='15000' step='500' placeholder='15000'>
+                  </div>
+                </div>
                 </fieldset>
                 <fieldset>
                   <legend class='filters-name'>Сетка:</legend>
@@ -48,7 +59,7 @@
                      <label for='adaptive-grid'>Адаптивная</label>
                     </li>
                     <li class='filter-item'>
-                      <input class='visually-hidden filter-input-radio' type='radio' name='grid' value='fixed' id='fixed-grid'>
+                      <input class='visually-hidden filter-input-radio' type='radio' name='grid' value='fixed' id='fixed-grid' disabled>
                       <label for='fixed-grid'>Фиксированная</label>
                     </li>
                     <li class='filter-item'>
@@ -65,7 +76,7 @@
                       <label for='feature-slider'>Слайдер</label>
                     </li>
                     <li class='filter-item'>
-                      <input class='visually-hidden filter-input-checkbox' type='checkbox' name='benefits-block' id='feature-benefits-block'>
+                      <input class='visually-hidden filter-input-checkbox' type='checkbox' name='benefits-block' id='feature-benefits-block' disabled>
                       <label for='feature-benefits-block'>Блок преимуществ</label>
                     </li>
                     <li class='filter-item'>
