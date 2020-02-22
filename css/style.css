@@ -76,8 +76,8 @@ img {
 .basket-navigation a {
     display:block;
 
-    padding-left: 23px;
-    padding-right: 23px;
+    margin-left: 23px;
+    margin-right: 23px;
     padding-top:12px;
     padding-bottom:12px;
 
@@ -203,8 +203,8 @@ img {
 
 .services{
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 .services-list{
@@ -215,7 +215,7 @@ img {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 80px;
 }
 
 .service-item{
@@ -265,6 +265,7 @@ img {
 }
 
 .button{
+    display: inline-block;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
@@ -324,14 +325,10 @@ img {
     padding-right: 39px;
 }
 
-.services::after{
-    content: "";
-    position: absolute;
-    top:507px;
-    left:140px;
-    width: 1160px;
-    height: 2px;
-    background-color: #eeeeee;
+.border-section{
+    border-color: #eeeeee;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .advantages{
@@ -443,16 +440,6 @@ img {
     margin-bottom: 27px;
 }
 
-.advantages::after{
-    content: "";
-    position: absolute;
-    left: 140px;
-    bottom:-58px;
-    width: 1160px;
-    height: 2px;
-    background-color: #eeeeee;
-}
-
 .partners{
     position: relative;
 
@@ -460,12 +447,10 @@ img {
 }
 
 .partners-list{
-    position:relative;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
     list-style: none;
     padding-left: 0;
@@ -473,6 +458,12 @@ img {
     padding-bottom:44px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.partner-item{
+    display:flex;
+    align-items:center;
+    position:relative;
 }
 
 .partner-item img{
@@ -490,52 +481,68 @@ img {
 .partner-item:not(:last-child)::after{
     content: "";
     position: absolute;
-    top:64px;
-    left:279px;
+    top:50%;
+    right:-59px;
+    margin-top:-26px;
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
 }
 
-.partner-item:nth-child(2)::after{
-   left:579px; 
+.contacts{
+    position: relative;
 }
 
-.partner-item:nth-child(3)::after{
-    left:879px; 
- }
+img.map{
+    width:1920px;
+}
 
-.partners::after{
-    content: "";
+.contacts-information{
     position: absolute;
+    top:54px;
     left:140px;
-    top:180px;
-    width: 1160px;
-    height: 2px;
-    background-color: #eeeeee;
+    box-sizing: border-box;
+    width:319px;
+    background-color:#ffffff;
+    padding-top:54px;
+    padding-bottom: 47px;
+    padding-left:50px;
 }
 
-.contacts span{
+.contacts-information span{
+    display: block;
+
     font-size:18px;
     font-weight:bold;
     line-height: 30px;
     text-align:left;
+
+    margin-bottom: 10px;
 }
 
 .contact-address{
+    letter-spacing: normal;
     font-size: 16px;
     line-height: 18px;
     text-align:left;
     color:#666666;
 }
 
-.contacts .button{
+.contacts-information .button{
+    width: 219px;
+
     font-size: 16px;
     line-height: 18px;
     text-align: center;
     color: #ffffff;
 
     background-color: #fb565a;
+
+    margin-top: 21px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .contacts .button:hover,
@@ -547,6 +554,17 @@ img {
     color:rgba(255, 255, 255, 0.3);
 
     background-color: #d7373b;
+}
+
+.map-marker{
+    position: absolute;
+    right: 389px;
+    top:89px;
+
+    width:231px;
+    height:190px;
+
+    background-image: url(../img/map-marker-png.png);
 }
 
 .feedback{
