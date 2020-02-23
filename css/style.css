@@ -1037,8 +1037,10 @@ fieldset:nth-child(3) .filters-name{
     opacity: 0.4;
 }
 
-.filter-item:hover label::before,
-.filter-item:focus label::before{
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before,
+.filter-input-checkbox:hover + label:before,
+.filter-input-checkbox:focus + label:before{
     opacity:0.7;
 }
 
@@ -1053,7 +1055,8 @@ fieldset:nth-child(3) .filters-name{
     opacity: 0.4;
 }
 
-.filter-input-radio:checked:hover + label::before{
+.filter-input-radio:checked:hover + label::before,
+.filter-input-radio:checked:focus + label::before{
     opacity:0.7;
 }
 
@@ -1088,7 +1091,8 @@ fieldset:nth-child(3) .filters-name{
     opacity: 0.4;
 }
 
-.filter-input-checkbox:checked:hover + label::before{
+.filter-input-checkbox:checked:hover + label::before,
+.filter-input-checkbox:checked:focus + label::before{
     opacity:0.7;
 }
 
