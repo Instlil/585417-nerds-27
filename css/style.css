@@ -470,7 +470,8 @@ img {
     opacity:0.2;
 }
 
-.partner-item img:hover{
+.partner-item img:hover,
+.partner-item img:focus{
     opacity:1;
 }
 
@@ -806,8 +807,8 @@ img.map{
 .sorting-wrapper{
     display: flex;
     flex-wrap: wrap; 
-    
-    margin-bottom: 59px;
+
+    margin-bottom: 50px;
 }
 
 h3.sorting{
@@ -817,7 +818,8 @@ h3.sorting{
     text-align:left;
     text-transform:uppercase;
 
-    margin-right: 267px;
+    margin:0;
+    margin-right: 254px;
 }
 
 .range-filter {
@@ -943,10 +945,58 @@ h3.sorting{
     margin-bottom: 0;
 }
 
+.sorting-button{
+    margin-left: 15px;
+}
+
+.sorting-button li{
+    padding-left: 18px;
+}
+
+.sorting-button a{
+    display: flex;
+}
+
+.sorting-descending a{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5.5px 0 5.5px;
+    border-color: rgba(166, 166, 166, 0.2) transparent transparent transparent;
+}
+
+.sorting-ascending a{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5.5px 10px 5.5px;
+    border-color: transparent transparent rgba(166, 166, 166, 0.2) transparent;
+}
+
+.sorting-descending a:hover,
+.sorting-descending a:focus{
+    border-color: rgba(166, 166, 166, 1) transparent transparent transparent;
+}
+
+.sorting-descending a:active,
+.active a{
+    border-color: #000000 transparent transparent transparent;
+}
+
+.sorting-ascending a:hover,
+.sorting-ascending a:focus{
+    border-color: transparent transparent rgba(166, 166, 166, 1) transparent;
+}
+
+.sorting-ascending a:active,
+.active a{
+    border-color: transparent transparent #000000 transparent;
+}
+
 .filters-name{
     font-size:18px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 25px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -974,52 +1024,40 @@ fieldset:nth-child(3) .filters-name{
     user-select: none;
 }
 
-.filter-input-radio:disabled + label,
-.filter-input-checkbox:disabled + label{
-    opacity:0.3;
-}
-
 .filter-grid label::before{
     content: "";
     position: absolute;
     top:0;
     left:-35px;
 
-    width: 20px;
-    height:20px;
-
-    border: 5px solid #4d4d4d;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/radio-off.svg);
+    background-repeat: no-repeat;
     opacity: 0.4;
-    border-radius: 50%;
 }
 
-.filter-item:hover label::before{
-    opacity:1;
+.filter-item:hover label::before,
+.filter-item:focus label::before{
+    opacity:0.7;
 }
 
-.filter-item:disabled label::before{
+.filter-input-radio:disabled +label::before,
+.filter-input-checkbox:disabled + label::before{
     opacity:0.1;
 }
 
-.filter-input-radio:checked + label::after{
-    content: "";
-    position: absolute;
-    top:9px;
-    left:-26px;
-
-
-    width:12px;
-    height:12px;
-    background-color: #4d4d4d;
+.filter-input-radio:checked + label::before{
+    background-image: url(../img/radio-on.svg);
+    background-repeat: no-repeat;
     opacity: 0.4;
-    border-radius: 50%;
 }
 
-.filter-input-radio:checked:hover + label::after{
-    opacity:1;
+.filter-input-radio:checked:hover + label::before{
+    opacity:0.7;
 }
 
-.filter-input-radio:checked:disabled + label::after{
+.filter-input-radio:checked:disabled + label::before{
     opacity:0.1;
 }
 
@@ -1029,32 +1067,32 @@ fieldset:nth-child(3) .filters-name{
     top:0;
     left:-35px;
 
-    width: 18px;
-    height:18px;
+    width: 27px;
+    height:23px;
 
-    border: 2px solid #4d4d4d;
-    border-radius: 2px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
     opacity: 0.4;
 }
 
-.filter-input-checkbox:checked + label::after{
+.filter-input-checkbox:checked + label::before{
     content: "";
     position: absolute;
-    top:-1px;
+    top:0px;
     left:-35px;
 
-    width:22px;
-    height:18px;
+    width:27px;
+    height:23px;
 
     background-image: url(../img/checkbox-on.svg);
     opacity: 0.4;
 }
 
-.filter-input-checkbox:checked:hover + label::after{
-    opacity:1;
+.filter-input-checkbox:checked:hover + label::before{
+    opacity:0.7;
 }
 
-.filter-input-checkbox:checked:disabled + label::after{
+.filter-input-checkbox:checked:disabled + label::before{
     opacity:0.1;
 }
 
@@ -1092,7 +1130,7 @@ fieldset:nth-child(3) .filters-name{
 .catalog-item{
     position: relative;
 
-    margin-bottom: 73px;
+    margin-bottom: 33px;
     margin-right: 40px;
 }
 
@@ -1100,9 +1138,13 @@ fieldset:nth-child(3) .filters-name{
     margin-right: 0;
 }
 
+.catalog-item article{
+    margin-top:40px;
+}
+
 .catalog-item article::before{
     position: absolute;
-    top:-40px;
+    top:0;
     right:0;
     content:"";
     width:360px;
@@ -1117,6 +1159,15 @@ fieldset:nth-child(3) .filters-name{
 }
 
 .catalog-item-card{
+    display:none;
+}
+
+.catalog-item:hover .catalog-item-card,
+.catalog-item.hovered .catalog-item-card{
+    display:block;
+    position: absolute;
+    bottom:0;
+    
     width: 360px;
     background-color:#eeeeee;
 }
@@ -1134,6 +1185,15 @@ fieldset:nth-child(3) .filters-name{
     padding-top: 29px;
 }
 
+.catalog-item a:hover,
+.catalog-item a:focus{
+    color:#fb565a;
+}
+
+.catalog-item a:active{
+    color:rgba(0, 0, 0, 0.3);
+}
+
 .catalog-item p{
     display: block;
 
@@ -1147,7 +1207,7 @@ fieldset:nth-child(3) .filters-name{
     /* почему кнопка не центрируется, если ей задать margin-left:auto и margin-right:auto;*/
     margin-left: 80px;
     margin-right: 80px;
-    margin-top:30px;
+    margin-top:14px;
     margin-bottom: 43px;
     padding-top: 18px;
     padding-bottom: 18px;
