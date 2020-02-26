@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: regular;
+    font-weight: normal;
     color: #000000;
 
     background-color: #ffffff;
@@ -84,8 +84,13 @@ img {
     color:#000000;
 }
 
+.basket-navigation{
+    max-width: 150px;
+}
+
 .basket-navigation .basket-link{
     position: relative;
+    margin:0;
     padding-left: 50px;
 }
 
@@ -555,31 +560,26 @@ img.map{
     background-color: #d7373b;
 }
 
-.map-marker{
-    position: absolute;
-    right: 389px;
-    top:89px;
+.feedback-modal{
+    display:none;
 
-    width:231px;
-    height:190px;
-
-    background-image: url(../img/map-marker-png.png);
-}
-
-.feedback{
-    position:relative;
+    position:fixed;
+    bottom:180px;
+    left:50%;
 
     box-sizing:border-box;
-    max-width:960px;
-    margin-left: auto;
-    margin-right: auto;
+    width:960px;
+    margin-left: -480px;
     padding-top: 73px;
     padding-bottom: 84px;
     padding-left: 100px;
     padding-right: 100px;
+
+    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+    background-color: #ffffff;
 }
 
-.feedback span{
+.feedback-modal span{
     display: block;
 
     font-size: 45px;
@@ -589,7 +589,7 @@ img.map{
     margin-bottom: 49px;
 }
 
-.feedback form{
+.feedback-modal form{
     width: 760px;
 
     display:flex;
@@ -632,25 +632,25 @@ img.map{
     padding-right: 16px;
   }
 
-.feedback .button{
+.feedback-modal .button{
     padding-right: 83px;
     padding-left: 83px;
 }
 
-.feedback input,
-.feedback textarea{
+.feedback-modal input,
+.feedback-modal textarea{
     outline: none;
 }
 
-.feedback label{
+.feedback-modal label{
     font-size: 16px;
     font-weight:bold;
     line-height: 18px;
     text-align: left;
 }
 
-.feedback input,
-.feedback textarea{
+.feedback-modal input,
+.feedback-modal textarea{
     font-size: 16px;
     line-height: 18px;
     text-align: left;
@@ -659,26 +659,26 @@ img.map{
     border:solid 2px #d7dcde;
 }
 
-.feedback input:hover,
-.feedback textarea:hover{
+.feedback-modal input:hover,
+.feedback-modal textarea:hover{
     border:solid 2px #b4b9bb;
 }
 
-.feedback input:focus,
-.feedback textarea:focus{
+.feedback-modal input:focus,
+.feedback-modal textarea:focus{
     color:#444444;
 
     border:solid 2px #000000;
 }
 
-.feedback input:invalid,
-.feedback textarea:invalid{
+.feedback-modal input:invalid,
+.feedback-modal textarea:invalid{
     color:#e74246;
 
     border:solid 2px #e74246;
 }
 
-.feedback .close-button{
+.feedback-modal .close-button{
     position: absolute;
     top:78px;
     right:90px;
@@ -689,13 +689,15 @@ img.map{
 
     background-image: url(../img/close-cross.svg);
     opacity: 0.3;
+
+    cursor: pointer;
 }
 
-.feedback .close-button:hover{
+.feedback-modal .close-button:hover{
     opacity: 1;
 }
 
-.feedback .close-button:active{
+.feedback-modal .close-button:active{
     opacity:0.1;
 }
 
