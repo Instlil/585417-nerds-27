@@ -32,6 +32,7 @@
             <h1 class='page-title'>Магазин готовых шаблонов</h1>
             <div class='container'>
             <section class='pattern-filter'>
+              <h2 class='visually-hidden'>Фильтр услуг</h2>
               <form method='get' action='https://echo.htmlacademy.ru'>
                 <fieldset>
                  <legend class='filters-name'>Стоимость:</legend>
@@ -98,17 +99,17 @@
             </section>
               <section class='catalog'>
               <div class='sorting-wrapper'>
-                <h2 class='visually-hidden'>Фильтр услуг</h2>
+                <h2 class='visually-hidden'>Каталог</h2>
                 <h3 class='sorting'>Сортировать:</h3>
                   <ul class='sorting-list'>
-                    <li class='sorting-item active'>
-                      <a href=''> По цене</a>
+                    <li class='sorting-item'>
+                      <a class='active' href=''>По цене</a>
                     </li>
                     <li class='sorting-item'>
-                      <a href=''> По типу</a>
+                      <a href=''>По типу</a>
                     </li>
                     <li class='sorting-item'>
-                      <a href=''> По названию</a>
+                      <a href=''>По названию</a>
                     </li>
                   </ul>
                   <ul class='sorting-button'>
@@ -118,12 +119,14 @@
                 </div>
               <h2 class='visually-hidden'>Каталог</h2>
               <ul class='catalog-list'>
-                <li class='catalog-item hovered'>
+                <li class='catalog-item'>
                   <article>
                     <img src='img/img-sedona.jpg' width='360' height='576' alt='Шаблон Sedona'>
                        <div class='catalog-item-card'>
-                       <a href=''>Sedona</a>
-                       <p>Информационный сайт<br> для туристов</p>
+                       <a href=''>
+                        <h2 class='visually-hidden'>Sedona</h2>
+                         Sedona</a>
+                       <p>Информационный сайт<br>для туристов</p>
                        <button class='button' type='button'>9 900 РУБ.</button>
                       </div>
                   </article>
@@ -132,8 +135,10 @@
                   <article>
                     <img src='img/img-pink-jpg.jpg' width='360' height='576' alt='Шаблон Pink'>
                        <div class='catalog-item-card'>
-                        <a href=''>Pink</a>
-                        <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
+                        <a href=''>Pink
+                          <h2 class='visually-hidden'>Pink</h2>
+                        </a>
+                        <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
                         <button class='button' type='button'>9 900 РУБ.</button>
                       </div>
                   </article>
@@ -142,8 +147,10 @@
                   <article>
                     <img src='img/img-barbershop-jpg.jpg' width='360' height='576' alt='Шаблон Barbershop Borodinski'>
                       <div class='catalog-item-card'>
-                        <a href=''>Barbershop</a>
-                        <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                        <a href=''>Barbershop
+                          <h2 class='visually-hidden'>Barbershop</h2>
+                        </a>
+                        <p>Сайт салона красоты.<br>Для мужчин, да.</p>
                         <button class='button' type='button'>9 900 РУБ.</button>
                       </div>
                   </article>
@@ -152,8 +159,10 @@
                   <article>
                     <img src='img/img-mishka-jpg.jpg' width='360' height='576' alt='Шаблон Mishka'>
                       <div class='catalog-item-card'>
-                        <a href=''>Mishka</a>
-                        <p>Интернет-магазин<br> вязаных игрушек</p>
+                        <a href=''>Mishka
+                          <h2 class='visually-hidden'>Mishka</h2>
+                        </a>
+                        <p>Интернет-магазин<br>вязаных игрушек</p>
                         <button class='button' type='button'>9 900 РУБ.</button>
                       </div>
                   </article>
@@ -162,8 +171,10 @@
                   <article>
                     <img src='img/img-aplus-jpg.jpg' width='360' height='576' alt='Шаблон A+'>
                       <div class='catalog-item-card'>
-                       <a href=''>A+</a>
-                       <p>Лендинг курсов повышения<br> квалификации</p>
+                       <a href=''>A+
+                        <h2 class='visually-hidden'>A+</h2>
+                       </a>
+                       <p>Лендинг курсов повышения<br>квалификации</p>
                        <button class='button' type='button'>9 900 РУБ.</button>
                       </div>
                   </article>
@@ -172,8 +183,10 @@
                   <article>
                      <img src='img/img-kvast-jpg.jpg' width='360' height='576' alt='Шаблон Кваст'>
                       <div class='catalog-item-card'>
-                       <a href=''>Кваст</a>
-                       <p>Промо-сайт производителя<br> крафтового кваса</p>
+                       <a href=''>Кваст
+                        <h2 class='visually-hidden'>Кваст</h2>
+                       </a>
+                       <p>Промо-сайт производителя<br>крафтового кваса</p>
                        <button class='button' type='button'>9 900 РУБ.</button>
                       </div>
                   </article>
@@ -245,7 +258,8 @@
           </div>
         </footer>
         <section class='feedback-modal'>
-          <span> Напишите нам</span>
+          <h2 class='visually-hidden'>Обратная связь</h2>
+          <span>Напишите нам</span>
          <form action='https://echo.htmlacademy.ru' method='post'>
             <p class='feedback-item'>
               <label for='name'>Ваше имя:</label>
@@ -261,7 +275,7 @@
             </p>
             <button class='button' type='submit'>Отправить</button>
           </form>
-          <button class='close-button' type='button'> Закрыть</button>
+          <button class='close-button' type='button'>Закрыть</button>
         </section>
       </body>
     </html>

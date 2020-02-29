@@ -1,11 +1,12 @@
 body {
+    min-width: 1160;
     margin: 0;
     padding: 0;
 
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
     color: #000000;
 
     background-color: #ffffff;
@@ -109,7 +110,7 @@ img {
     opacity: 0.3;
 }
 
-.site-navigation a:hover,
+.site-navigation a:hover:not(.active),
 .basket-navigation a:hover,
 .site-navigation a:focus,
 .basket-navigation a:focus{
@@ -126,26 +127,114 @@ img {
 }
 
 .slogans{
-    padding-top:18px;
-
     background-color:#eeeeee;
 }
 
+.slogans .container{
+    position: relative;
+}
+
+.slider-controls{
+    position: absolute;
+    left:50%;
+    bottom:106px;
+    width:200px;
+    height:10px;
+
+    margin-left:-100px;
+
+    text-align:center;
+}
+
+
+.slider-controls label{
+    display:inline-block;
+    position: relative;
+    
+    width:18px;
+    height:18px;
+    margin-right: 6px;
+    margin-left: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.slider-controls label:after{
+content: "";
+position: absolute;
+width: 4px;
+height: 4px;
+background: #ffffff;
+border-radius: 50%;
+top: 2px;
+right: 2px;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"]{
+    background: #c1c1c1;
+}
+
+.slogan-slider-1{
+    background-image: url(../img/slide1-img.png);
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-position-y: 28px;
+}
+
+.slogan-slider-2{
+    background-image: url(../img/slide2-img.png);
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-position-y: 28px; 
+}
+
+.slogan-slider-3{
+background-image: url(../img/slide3-img.png);
+background-repeat: no-repeat;
+background-position-x:right;
+background-position-y: 28px;
+}
 
 .slogan-slider-1,
 .slogan-slider-2,
 .slogan-slider-3{
-    display:flex;
-    justify-content: space-between;
+    display:none;
 }
 
+#btn-1:checked ~ .slogan-slider-1{
+    display:block;
+}
+
+#btn-2:checked ~ .slogan-slider-2{
+    display:block;
+}
+
+#btn-3:checked ~ .slogan-slider-3{
+    display:block;
+}
+
+.slogan-wrapper{
+    padding-top:80px;
+    padding-bottom:80px;
+
+    width:515px;
+}
 .slogan-statement{
     font-size:55px;
-    font-weight:normal;
+    font-weight:500;
     line-height:55px;
+    letter-spacing: normal;
     text-align:left;
 
-    margin-bottom: 28px;
+    margin:0;
+    padding-bottom: 28px;
 }
 
 .slogan-explanation{
@@ -182,30 +271,6 @@ img {
     background-color: #d7373b;
 }
 
-.slogan-slider-1 .slogan-img{
-    width:698px;
-    height: 413px;
-    background-image: url(../img/slide1-img.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.slogan-slider-2 .slogan-img{
-    width:663px;
-    height:430px;
-    background-image: url(../img/slide2-img.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.slogan-slider-3 .slogan-img{
-    width:759px;
-    height: 411px;
-    background-image: url(../img/slide3-img.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .services{
     position: relative;
     margin-top: 80px;
@@ -231,7 +296,7 @@ img {
 
 .service-item h3{
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
 
@@ -272,6 +337,7 @@ img {
 .button{
     display: inline-block;
     font-size: 16px;
+    font-weight: 500;
     line-height: 18px;
     text-align: center;
     vertical-align: middle;
@@ -293,6 +359,7 @@ img {
     color:rgba(255, 255, 255, 0.3);
 
     background-color: #d7373b;
+    box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .button-green{
@@ -331,7 +398,7 @@ img {
 }
 
 .border-section{
-    border-color: #eeeeee;
+    border:1px solid #eeeeee;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -358,7 +425,7 @@ img {
 
 .advantages-title{
     font-size:45px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 45px;
     text-align:left;
     margin-top: 40px;
@@ -371,7 +438,7 @@ img {
 }
 
 .advantage-orders{
-    font-weight: bold;
+    font-weight: 700;
     text-align:left;
     text-transform: uppercase;
 
@@ -406,7 +473,7 @@ img {
     text-transform: uppercase;
 
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     margin-top:41px;
 }
 
@@ -437,7 +504,7 @@ img {
     display: block;
 
     font-size: 45px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 10px;
     text-align:left;
     color: #000000;
@@ -519,7 +586,7 @@ img.map{
     display: block;
 
     font-size:18px;
-    font-weight:bold;
+    font-weight:700;
     line-height: 30px;
     text-align:left;
 
@@ -531,6 +598,11 @@ img.map{
     font-size: 16px;
     line-height: 18px;
     text-align:left;
+    color:#666666;
+}
+
+.contact-tel a{
+
     color:#666666;
 }
 
@@ -626,7 +698,8 @@ img.map{
 
 .feedback-item:nth-child(3) textarea{
     box-sizing:border-box;
-    width: 760px;
+    max-width: 760px;
+    max-height: 118px;
     padding-top: 9px;
     padding-left: 15px;
     padding-right: 16px;
@@ -644,7 +717,7 @@ img.map{
 
 .feedback-modal label{
     font-size: 16px;
-    font-weight:bold;
+    font-weight:700;
     line-height: 18px;
     text-align: left;
 }
@@ -688,6 +761,7 @@ img.map{
     border:none;
 
     background-image: url(../img/close-cross.svg);
+    background-color: #ffffff;
     opacity: 0.3;
 
     cursor: pointer;
@@ -749,7 +823,7 @@ img.map{
 .footer-social .friendship{
     font-size:36px;
     line-height: 36px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: left;
 
     margin-top: 0;
@@ -767,7 +841,7 @@ img.map{
 
 .page-title{
     font-size: 55px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 55px;
     text-align:center;
 
@@ -813,7 +887,7 @@ img.map{
 
 h3.sorting{
     font-size:18px;
-    font-weight:bold;
+    font-weight:700;
     line-height: 18px;
     text-align:left;
     text-transform:uppercase;
@@ -926,12 +1000,12 @@ h3.sorting{
 }
 
 .sorting-item a:active,
-.sorting-item.active a{
+.sorting-item a.active{
     color:#000000;
 }
 
-.sorting-item a:hover,
-.sorting-item a:focus{
+.sorting-item a:hover:not(.active),
+.sorting-item a:focus:not(.active){
     color:rgba(0, 0, 0, 0.6);
 }
 
@@ -995,7 +1069,7 @@ h3.sorting{
 
 .filters-name{
     font-size:18px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 25px;
     text-align: left;
     text-transform: uppercase;
@@ -1148,7 +1222,7 @@ input[type='checkbox']:checked:disabled ~ label::before{
 
 .catalog-item article::before{
     position: absolute;
-    top:0;
+    top:1px;
     right:0;
     content:"";
     width:360px;
@@ -1157,23 +1231,23 @@ input[type='checkbox']:checked:disabled ~ label::before{
     opacity:0.12;
 }
 
-.catalog-item:hover article::before,
-.catalog-item.hovered article::before{
+.catalog-item:hover article::before{
     opacity:1;
 }
 
 .catalog-item-card{
-    display:none;
-}
+    opacity:0;
 
-.catalog-item:hover .catalog-item-card,
-.catalog-item.hovered .catalog-item-card{
-    display:block;
     position: absolute;
     bottom:0;
     
     width: 360px;
     background-color:#eeeeee;
+}
+
+.catalog-item:hover .catalog-item-card,
+.catalog-item:focus-within .catalog-item-card{
+    opacity:1;    
 }
 
 .catalog-item a{
@@ -1208,15 +1282,14 @@ input[type='checkbox']:checked:disabled ~ label::before{
 }
 
 .catalog-item-card .button{
-    /* почему кнопка не центрируется, если ей задать margin-left:auto и margin-right:auto;*/
     margin-left: 80px;
     margin-right: 80px;
     margin-top:14px;
     margin-bottom: 43px;
     padding-top: 18px;
     padding-bottom: 18px;
-    padding-right: 61px;
-    padding-left: 61px;  
+    padding-right: 60px;
+    padding-left: 60px;  
 }
 
 .pages-list{
@@ -1229,7 +1302,6 @@ input[type='checkbox']:checked:disabled ~ label::before{
 }
 
 .page-item{
-
     margin-right:5px;
     margin-left: 5px;
 }
@@ -1250,7 +1322,7 @@ input[type='checkbox']:checked:disabled ~ label::before{
     padding-left: 21px;
     padding-right: 21px;
     font-size: 13.5px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 15.5px;
     text-align:center;
     color:#000000;
@@ -1279,7 +1351,7 @@ input[type='checkbox']:checked:disabled ~ label::before{
 .page-item.active a{
     color:#000000;
 
-    background-color: #eeeeee;
+    background-color: #ffffff;
 
     border: solid 3px #dbdbdb;
     padding-left:18px;
