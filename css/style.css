@@ -77,10 +77,12 @@ img {
 .basket-navigation a {
     display:block;
 
+    font-weight:500;
+
     margin-left: 23px;
     margin-right: 23px;
-    padding-top:12px;
-    padding-bottom:12px;
+    padding-top:18px;
+    padding-bottom:18px;
 
     color:#000000;
 }
@@ -92,14 +94,14 @@ img {
 .basket-navigation .basket-link{
     position: relative;
     margin:0;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 .basket-link::before{
     content: "";
     position: absolute;
-    top:18px;
-    right:115px;
+    top:25px;
+    left:0;
     width: 15px;
     height: 15px;
 
