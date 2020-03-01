@@ -569,19 +569,21 @@ background-position-y: 28px;
 }
 
 img.map{
-    width:1920px;
+    width:100%;
 }
 
 .contacts-information{
     position: absolute;
-    top:54px;
-    left:140px;
+    top:50%;
+    left:calc((100% - 1160px)/2);
     box-sizing: border-box;
-    width:319px;
     background-color:#ffffff;
     padding-top:54px;
     padding-bottom: 47px;
     padding-left:50px;
+    padding-right: 50px;
+    transform:translateY(-50%);
+
 }
 
 .contacts-information span{
