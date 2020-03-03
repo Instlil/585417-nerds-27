@@ -897,7 +897,7 @@ img.map{
     justify-content: space-between;
     align-items: baseline;
     margin-top: 55px;
-    margin-bottom: 66px;
+    margin-bottom: 60px;
 }
 
 .pattern-filter{
@@ -1239,8 +1239,9 @@ input[type='checkbox']:checked:disabled ~ label::before{
 .catalog-list{
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
     list-style: none;
 }
@@ -1248,7 +1249,7 @@ input[type='checkbox']:checked:disabled ~ label::before{
 .catalog-item{
     position: relative;
 
-    margin-bottom: 33px;
+    margin-bottom: 25px;
     margin-right: 40px;
 }
 
@@ -1279,7 +1280,7 @@ input[type='checkbox']:checked:disabled ~ label::before{
     opacity:0;
 
     position: absolute;
-    bottom:0;
+    bottom:10px;
     
     width: 360px;
     background-color:#eeeeee;
@@ -1300,7 +1301,7 @@ input[type='checkbox']:checked:disabled ~ label::before{
     text-align: center;
     color:#000000;
     
-    padding-top: 29px;
+    padding-top: 19px;
 }
 
 .catalog-item a:hover,
@@ -1332,6 +1333,10 @@ input[type='checkbox']:checked:disabled ~ label::before{
     padding-left: 60px;  
 }
 
+.pages{
+    margin-top: 30px;
+}
+
 .pages-list{
     display: flex;
     flex-wrap: wrap;
@@ -1342,8 +1347,7 @@ input[type='checkbox']:checked:disabled ~ label::before{
 }
 
 .page-item{
-    margin-right:5px;
-    margin-left: 5px;
+    margin-right:10px;
 }
 
 .page-item:last-child{
@@ -1361,9 +1365,10 @@ input[type='checkbox']:checked:disabled ~ label::before{
     padding-bottom: 19px;
     padding-left: 21px;
     padding-right: 21px;
-    font-size: 13.5px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 15.5px;
+    line-height: 18px;
+    text-transform: uppercase;
     text-align:center;
     color:#000000;
 
