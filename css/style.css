@@ -61,17 +61,15 @@ img {
 
 .site-navigation,
 .basket-navigation{
+    display: flex;
+    flex-wrap: wrap;
+
     list-style:none;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.site-navigation,
-.basket-navigation{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .site-navigation a,
 .basket-navigation a {
@@ -79,10 +77,8 @@ img {
 
     font-weight:500;
 
-    margin-left: 23px;
-    margin-right: 23px;
-    padding-top:18px;
-    padding-bottom:18px;
+    margin-right: 46px;
+    margin-bottom: 20px;
 
     color:#000000;
 }
@@ -94,13 +90,14 @@ img {
 .basket-navigation .basket-link{
     position: relative;
     margin:0;
+    margin-bottom: 20px;
     padding-left: 40px;
 }
 
 .basket-link::before{
     content: "";
     position: absolute;
-    top:25px;
+    top:7px;
     left:0;
     width: 15px;
     height: 15px;
@@ -186,22 +183,21 @@ right: 2px;
 .slogan-slider-1{
     background-image: url(../img/slide1-img.png);
     background-repeat: no-repeat;
-    background-position-x:right;
-    background-position-y: 28px;
+    background-position-x:431px;
+    background-position-y: 8px;
 }
 
 .slogan-slider-2{
     background-image: url(../img/slide2-img.png);
     background-repeat: no-repeat;
     background-position-x:right;
-    background-position-y: 28px; 
 }
 
 .slogan-slider-3{
 background-image: url(../img/slide3-img.png);
 background-repeat: no-repeat;
 background-position-x:right;
-background-position-y: 28px;
+background-position-y: 10px;
 }
 
 .slogan-slider-1,
@@ -229,18 +225,19 @@ background-position-y: 28px;
     width:515px;
 }
 .slogan-statement{
+    display: block;
     font-size:55px;
     font-weight:500;
     line-height:55px;
     letter-spacing: normal;
     text-align:left;
 
-    margin:0;
-    padding-bottom: 28px;
+    margin-top: -10px;
+    margin-bottom: 25px;
 }
 
 .slogan-explanation{
-    margin-bottom:42px;
+    margin-bottom: 38px;
 }
 
 .slogan-explanation,
@@ -258,8 +255,10 @@ background-position-y: 28px;
 
     background-color: #fb565a;
 
-    padding-right: 55px;
+    padding-right: 56px;
     padding-left: 53px;
+    padding-top: 17px;
+    padding-bottom: 15px;
 }
 
 .slogans .button:hover,
@@ -294,20 +293,24 @@ background-position-y: 28px;
     text-align: left;
 
     width: 300px;
+    margin-right: 60px;
 }
 
 .service-item h3{
+    display: block;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+    letter-spacing: normal;
     text-transform: uppercase;
-
-    margin-top: 30px;
-    margin-bottom: 27px;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 18px;
 }
 
 .service-item .service-explanation{
-    margin-bottom:35px;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .service-item .service-img {
@@ -395,8 +398,10 @@ background-position-y: 28px;
 }
 
 .service-item .button{
-    padding-left: 39px;
-    padding-right: 39px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 17px;
+    padding-bottom: 17px;
 }
 
 .border-section{
@@ -408,7 +413,7 @@ background-position-y: 28px;
 .advantages{
     position: relative;
     margin-top:40px;
-    margin-bottom: 76px;
+    margin-bottom: 74px;
 }
 
 .advantages .container{
@@ -426,17 +431,19 @@ background-position-y: 28px;
 }
 
 .advantages-title{
-    font-size:45px;
+    font-size: 45px;
     font-weight: 500;
     line-height: 45px;
-    text-align:left;
-    margin-top: 40px;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 0;
+    margin-top: 35px;
     margin-bottom: 30px;
 }
 
 .advantage-explanation{
     display:block;   
-    margin-bottom: 43px; 
+    margin-bottom: 42px; 
 }
 
 .advantage-orders{
@@ -444,11 +451,13 @@ background-position-y: 28px;
     text-align:left;
     text-transform: uppercase;
 
-    margin-bottom: 39px;
+    
 }
 
 .order-list{
     list-style: none;
+
+    margin:0;
 
     text-align: left;
     color:#283136;
@@ -457,15 +466,15 @@ background-position-y: 28px;
 .order-list li{
     position: relative;
 
-    margin-top: 18px;
-    margin-bottom: 18px; 
+    margin-top: 23px;
+    margin-left: -3px; 
 }
 
 .order-list li::before{
     content: "";
     position: absolute;
     left:-36px;
-    top:12px;
+    top:10px;
     width: 25px;
     height: 2px;
     background-color: #fb565a;
@@ -476,7 +485,7 @@ background-position-y: 28px;
 
     text-align: center;
     font-weight: 700;
-    margin-top:41px;
+    margin-top:30px;
 }
 
 .percents-list{
@@ -500,6 +509,12 @@ background-position-y: 28px;
     color:#283136;
 
     margin-top: 30px;
+    margin-right: 20px;
+}
+
+.percents-list-item span{
+    display: inline-block;
+    margin-top: 8px;
 }
 
 .percents-list-item b{
@@ -528,9 +543,10 @@ background-position-y: 28px;
 
     list-style: none;
     padding-left: 0;
-    padding-top:46px;
-    padding-bottom:44px;
+    padding-top:48px;
+    padding-bottom:35px;
     margin-top: 0;
+    margin-left: 30px;
     margin-bottom: 0;
 }
 
@@ -538,6 +554,7 @@ background-position-y: 28px;
     display:flex;
     align-items:center;
     position:relative;
+    margin-right: 70px;
 }
 
 .partner-item img{
@@ -556,9 +573,9 @@ background-position-y: 28px;
 .partner-item:not(:last-child)::after{
     content: "";
     position: absolute;
-    top:50%;
-    right:-59px;
-    margin-top:-26px;
+    top: 50%;
+    right: -50px;
+    margin-top: -35px;
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
@@ -578,7 +595,7 @@ img.map{
     left:calc((100% - 1160px)/2);
     box-sizing: border-box;
     background-color:#ffffff;
-    padding-top:54px;
+    padding-top:48px;
     padding-bottom: 47px;
     padding-left:50px;
     padding-right: 50px;
@@ -593,8 +610,6 @@ img.map{
     font-weight:700;
     line-height: 30px;
     text-align:left;
-
-    margin-bottom: 10px;
 }
 
 .contact-address{
@@ -603,10 +618,11 @@ img.map{
     line-height: 18px;
     text-align:left;
     color:#666666;
+    margin:0;
+    margin-top:26px;
 }
 
 .contact-tel a{
-
     color:#666666;
 }
 
@@ -621,8 +637,8 @@ img.map{
     background-color: #fb565a;
 
     margin-top: 21px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .contacts .button:hover,
@@ -794,7 +810,7 @@ img.map{
 
     list-style: none;
     padding-left: 0;
-    margin-top: 0;
+    margin-top: -8px;
     margin-bottom: 0;
     margin-right: 140px;
 }
@@ -808,8 +824,7 @@ img.map{
     background-color: #e1e1e1;
     border-radius: 50%;
 
-    margin-left:6px;
-    margin-right: 6px;
+    margin-right: 12px;
   }
 
 .social-button:hover,
@@ -824,23 +839,26 @@ img.map{
     fill:rgba(255, 255, 255, 0.3);
 }
 
-.footer-social .friendship{
+.friendship-wrapper{
+    margin-left: -14px;
+}
+
+.friendship-wrapper .friendship{
     font-size:36px;
     line-height: 36px;
     font-weight: 700;
     text-align: left;
 
-    margin-top: 0;
-    margin-bottom: 12px;
+    margin:0;
 }
 
-.footer-social .friendship-discount{
-   margin-bottom: 0;
-
+.friendship-wrapper .friendship-discount{
    font-size: 16px;
    line-height: 22px;
    text-align: left;
    color:#444444;
+
+   margin-top: 10px;
 }
 
 .page-title{
@@ -851,26 +869,35 @@ img.map{
 
     margin:0;
     padding:0;
-    padding-top: 100px;
-    padding-bottom: 116px;;
+    padding-top: 70px;
+    padding-bottom: 106px;;
 
     background-color: #eeeeee;
 }
 
+
 .pattern-filter fieldset{
     margin: 0;
-    margin-bottom:32px;
+    margin-bottom:58px;
     padding: 0;
 
     border: none;
+}
+
+.pattern-filter fieldset:nth-child(2){
+    margin-bottom:29px;
+}
+
+.pattern-filter fieldset:last-of-type{
+    margin-bottom:29px;
 }
 
 .catalog-page .container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 55px;
+    margin-bottom: 66px;
 }
 
 .pattern-filter{
@@ -902,7 +929,7 @@ h3.sorting{
 
 .range-filter {
     width: 260px;
-    margin-top: 49px;
+    margin-top: 53px;
   }
 
   .range-controls {
@@ -966,11 +993,18 @@ h3.sorting{
     font-size: 16px;
     text-transform: uppercase;
 }
+
+.price-controls label:last-of-type{
+    margin-left:34px;
+}
   
 .price-controls input {
     width: 60px;
-    padding: 8px 10px;
-    margin-left: 10px;
+    padding-top: 8px;
+    padding-bottom:8px;
+    padding-right:10px;
+    padding-left: 10px;
+    margin-left: 11px;
 
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
@@ -1089,7 +1123,7 @@ fieldset:nth-child(3) .filters-name{
     line-height: 20px;
     text-align: left;
     color:#283136;
-    margin-bottom:16px;
+    margin-bottom:20px;
     padding-left: 35px;
 }
 
@@ -1100,6 +1134,8 @@ fieldset:nth-child(3) .filters-name{
 
     cursor: pointer;
     user-select: none;
+
+    margin-top: 3px;
 }
 
 .filter-grid label::before{
