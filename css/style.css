@@ -663,6 +663,15 @@ img.map{
     background-color: #d7373b;
 }
 
+@keyframes appearance{
+    0% { 
+        transform: translateX(-2000px);
+       }
+    100% {
+        transform: translateX(30px);
+    }
+}
+
 .feedback-modal{
     display:none;
 
@@ -680,6 +689,12 @@ img.map{
 
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
     background-color: #ffffff;
+}
+
+.modal-show {
+    display: block;
+  
+    animation: appearance 0.5s;
 }
 
 .feedback-modal span{
