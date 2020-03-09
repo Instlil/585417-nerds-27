@@ -589,10 +589,24 @@ background-position-y: 10px;
     display:flex;
 
     position: relative;
+    height: 416px;
+    overflow: hidden;
+}
+
+.contacts iframe{
+    position: relative;
+    z-index: 10;
+
+    border: none;
 }
 
 img.map{
     width:100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .contacts-information{
