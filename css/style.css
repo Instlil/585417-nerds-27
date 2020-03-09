@@ -594,8 +594,9 @@ background-position-y: 10px;
 }
 
 .contacts iframe{
+    width:100%;
     position: relative;
-    z-index: 10;
+    z-index: 2;
 
     border: none;
 }
@@ -621,6 +622,7 @@ img.map{
     padding-right: 50px;
     transform:translateY(-50%);
 
+    z-index:3;
 }
 
 .contacts-information span{
@@ -703,6 +705,8 @@ img.map{
 
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
     background-color: #ffffff;
+
+    z-index:4;
 }
 
 .modal-show {
@@ -760,9 +764,10 @@ img.map{
     box-sizing:border-box;
     max-width: 760px;
     max-height: 118px;
-    padding-top: 9px;
+    padding-top: 4px;
     padding-left: 15px;
     padding-right: 16px;
+    padding-bottom: 4px;
   }
 
 .feedback-modal .button{
@@ -880,6 +885,8 @@ img.map{
 }
 
 .friendship-wrapper{
+    width:545px;
+
     margin-left: -14px;
 }
 
@@ -950,9 +957,10 @@ img.map{
 }
 
 .sorting-wrapper{
+    width:760px;
     display: flex;
     flex-wrap: wrap; 
-
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 
@@ -1175,6 +1183,7 @@ fieldset:nth-child(3) .filters-name{
     cursor: pointer;
     user-select: none;
 
+    width:260px;
     margin-top: 3px;
 }
 
