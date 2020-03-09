@@ -972,7 +972,8 @@ h3.sorting{
     text-transform:uppercase;
 
     margin:0;
-    margin-right: 254px;
+
+    flex-grow: 1;
 }
 
 .range-filter {
