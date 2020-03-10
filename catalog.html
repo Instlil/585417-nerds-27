@@ -5,7 +5,7 @@
     <title>Нёрдс:Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href='css/normalize.css' rel='stylesheet' >
-    <link href='css/style-min.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
       <header class='header'>
@@ -34,7 +34,7 @@
             <aside class='pattern-filter'>
               <h2 class='visually-hidden'>Фильтр услуг</h2>
               <form method='get' action='https://echo.htmlacademy.ru'>
-                <fieldset>
+                <fieldset class='filters'>
                  <legend class='filters-name'>Стоимость:</legend>
                  <div class="range-filter">
                   <div class="range-controls">
@@ -52,7 +52,7 @@
                   </div>
                 </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class='filters'>
                   <legend class='filters-name'>Сетка:</legend>
                   <ul class='filter-grid'>
                     <li class='filter-item'>
@@ -69,7 +69,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class='filters'>
                   <legend class='filters-name'>Особенности</legend>
                   <ul class='filter-feature'>
                     <li class='filter-item'>
@@ -123,11 +123,11 @@
                   <article>
                     <img src='img/img-sedona.jpg' width='360' height='576' alt='Шаблон Sedona'>
                        <div class='catalog-item-card'>
-                       <a href=''>
+                       <a href='' class='catalog-item-name'>
                         <h2 class='visually-hidden'>Sedona</h2>
                          Sedona</a>
                        <p>Информационный сайт<br>для туристов</p>
-                       <button class='button' type='button'>9 900 РУБ.</button>
+                       <a class='button' type='button'>9 900 РУБ.</a>
                       </div>
                   </article>
                 </li>
@@ -135,11 +135,11 @@
                   <article>
                     <img src='img/img-pink-jpg.jpg' width='360' height='576' alt='Шаблон Pink'>
                        <div class='catalog-item-card'>
-                        <a href=''>Pink
+                        <a href='' class='catalog-item-name'>Pink
                           <h2 class='visually-hidden'>Pink</h2>
                         </a>
                         <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
-                        <button class='button' type='button'>9 900 РУБ.</button>
+                        <a class='button' type='button'>9 900 РУБ.</a>
                       </div>
                   </article>
                 </li>
@@ -147,11 +147,11 @@
                   <article>
                     <img src='img/img-barbershop-jpg.jpg' width='360' height='576' alt='Шаблон Barbershop Borodinski'>
                       <div class='catalog-item-card'>
-                        <a href=''>Barbershop
+                        <a href='' class='catalog-item-name'>Barbershop
                           <h2 class='visually-hidden'>Barbershop</h2>
                         </a>
                         <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-                        <button class='button' type='button'>9 900 РУБ.</button>
+                        <a class='button' type='button'>9 900 РУБ.</a>
                       </div>
                   </article>
                 </li>
@@ -159,11 +159,11 @@
                   <article>
                     <img src='img/img-mishka-jpg.jpg' width='360' height='576' alt='Шаблон Mishka'>
                       <div class='catalog-item-card'>
-                        <a href=''>Mishka
+                        <a href='' class='catalog-item-name'>Mishka
                           <h2 class='visually-hidden'>Mishka</h2>
                         </a>
                         <p>Интернет-магазин<br>вязаных игрушек</p>
-                        <button class='button' type='button'>9 900 РУБ.</button>
+                        <a class='button' type='button'>9 900 РУБ.</a>
                       </div>
                   </article>
                 </li>
@@ -171,11 +171,11 @@
                   <article>
                     <img src='img/img-aplus-jpg.jpg' width='360' height='576' alt='Шаблон A+'>
                       <div class='catalog-item-card'>
-                       <a href=''>A+
+                       <a href='' class='catalog-item-name'>A+
                         <h2 class='visually-hidden'>A+</h2>
                        </a>
                        <p>Лендинг курсов повышения<br>квалификации</p>
-                       <button class='button' type='button'>9 900 РУБ.</button>
+                       <a class='button' type='button'>9 900 РУБ.</a>
                       </div>
                   </article>
                 </li>
@@ -183,11 +183,11 @@
                   <article>
                      <img src='img/img-kvast-jpg.jpg' width='360' height='576' alt='Шаблон Кваст'>
                       <div class='catalog-item-card'>
-                       <a href=''>Кваст
+                       <a href='' class='catalog-item-name'>Кваст
                         <h2 class='visually-hidden'>Кваст</h2>
                        </a>
                        <p>Промо-сайт производителя<br>крафтового кваса</p>
-                       <button class='button' type='button'>9 900 РУБ.</button>
+                       <a class='button' type='button'>9 900 РУБ.</a>
                       </div>
                   </article>
                 </li>
@@ -222,7 +222,7 @@
                191186, Санкт-Петербург, <br>
               ул. Б. Конюшенная, д. 19/8<br></p>
               <p class='contact-tel'><a href='tel:+78122757575'>тел. +7 (812) 275-75-75</a></p>
-            <button class='button' type='button'>Напишите нам</button>
+            <a class='button' type='button'>Напишите нам</a>
           </div>
           </div>
           <div class='footer-social'>
