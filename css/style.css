@@ -56,7 +56,7 @@ img{
     color:#000000;
 }
 
-.logo-main-navigation:hover:not(.active) img,
+.logo-main-navigation:hover img,
 .logo-main-navigation:focus img{
     opacity:0.8;
 }
@@ -115,7 +115,7 @@ img{
     opacity: 0.3;
 }
 
-.site-navigation a:hover:not(.active),
+.site-navigation a:hover,
 .basket-navigation a:hover,
 .site-navigation a:focus,
 .basket-navigation a:focus{
@@ -127,7 +127,8 @@ img{
     color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation .active{
+.site-navigation a.active{
+    color:#000000;
     border-bottom: 2px solid #fb565a;
 }
 
@@ -683,27 +684,6 @@ img.map{
     background-color: #d7373b;
 }
 
-@keyframes appearance{
-    0% { 
-        transform: translateX(-2000px);
-       }
-    100% {
-        transform: translateX(30px);
-    }
-}
-
-@keyframes close{
-   0%{
-       transform: translateX(30px);
-   } 
-   50%{
-       transform: translateX(10px);
-   }
-   100%{
-       transform: translateX(-2000px);
-   }
-}
-
 @keyframes shake{
     0%,
   100% {
@@ -749,13 +729,15 @@ img.map{
 .modal-show{
     display: block;
   
-    animation: appearance 0.5s;
+    transition : all 0.6s linear;
+    transform: translateX(30px);
 }
 
 .modal-close{
-    display:none;
+    display: block;
 
-    animation: close 0.5s;
+    transition : all 0.6s linear;
+    transform: translateX(-100vw);
 }
 
 .modal-error{
@@ -1388,12 +1370,17 @@ h3.sorting{
     position: absolute;
     padding-bottom:43px;
     bottom:0;
+    left:0;
+    z-index:1;
     
     width: 360px;
     background-color:#eeeeee;
 }
 
-.catalog-item:hover .catalog-item-card,
+.catalog-item:hover .catalog-item-card{
+    opacity:1; 
+}
+
 .catalog-item:focus-within .catalog-item-card{
     opacity:1;    
 }
