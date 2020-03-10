@@ -163,7 +163,6 @@ img{
     border-radius: 50%;
     border: 5px solid #fff;
     vertical-align: top;
-    border-radius: 50%;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -693,6 +692,18 @@ img.map{
     }
 }
 
+@keyframes close{
+   0%{
+       transform: translateX(30px);
+   } 
+   50%{
+       transform: translateX(10px);
+   }
+   100%{
+       transform: translateX(-2000px);
+   }
+}
+
 @keyframes shake{
     0%,
   100% {
@@ -739,6 +750,12 @@ img.map{
     display: block;
   
     animation: appearance 0.5s;
+}
+
+.modal-close{
+    display:none;
+
+    animation: close 0.5s;
 }
 
 .modal-error{
