@@ -706,7 +706,7 @@ img.map{
 }
 
 .feedback-modal{
-    display:none;
+    display:block;
 
     position:fixed;
     bottom:180px;
@@ -724,20 +724,16 @@ img.map{
     background-color: #ffffff;
 
     z-index:4;
+
+    transition: transform 0.6s linear;
+    transform: translateX(-100vw);
 }
 
 .modal-show{
     display: block;
   
-    transition : all 0.6s linear;
+    transition: transform 0.6s linear;
     transform: translateX(30px);
-}
-
-.modal-close{
-    display: block;
-
-    transition : all 0.6s linear;
-    transform: translateX(-100vw);
 }
 
 .modal-error{
